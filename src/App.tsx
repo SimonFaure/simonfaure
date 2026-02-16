@@ -104,7 +104,7 @@ function App() {
                         >
                           <Mail className="w-5 h-5" />
                           <span className="font-mono border-b-2 border-black group-hover:border-gray-600 pb-1">
-                           <a href="mailto:faure.developpeur@gmail.com">faure.developpeur@gmail.com</a>
+                          faure.developpeur@gmail.com
                           </span>
                         </a>
                       </div>
