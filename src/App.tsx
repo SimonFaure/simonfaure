@@ -1,5 +1,5 @@
 import { useState, useEffect } from 'react';
-import { Mail } from 'lucide-react';
+import { Mail, ExternalLink } from 'lucide-react';
 
 function App() {
   const [typedText, setTypedText] = useState('');
@@ -205,17 +205,30 @@ function App() {
                             </ul>
                           </div>
                         </div>
-                        <div className="pt-4 border-t-2 border-black">
-                          <p className="text-xs tracking-[0.4em] mb-3 font-bold">PROFESSIONAL INQUIRIES</p>
-                          <a
-                            href="mailto:contact@taghunter.fr"
-                            className="inline-flex items-center justify-center gap-3 text-black hover:text-gray-600 transition-colors duration-200 text-base md:text-lg group"
-                          >
-                            <Mail className="w-5 h-5" />
-                            <span className="font-mono border-b-2 border-black group-hover:border-gray-600 pb-1">
-                              contact@taghunter.fr
-                            </span>
-                          </a>
+                        <div className="pt-4 border-t-2 border-black space-y-4">
+                          <div>
+                            <a
+                              href="https://taghunter.fr"
+                              target="_blank"
+                              rel="noopener noreferrer"
+                              className="inline-flex items-center justify-center gap-3 bg-black text-white hover:bg-gray-800 transition-all duration-200 px-8 py-3 border-2 border-black hover:shadow-lg group"
+                            >
+                              <span className="font-bold tracking-wider text-sm">VISIT WEBSITE</span>
+                              <ExternalLink className="w-4 h-4 group-hover:translate-x-1 transition-transform" />
+                            </a>
+                          </div>
+                          <div>
+                            <p className="text-xs tracking-[0.4em] mb-3 font-bold">PROFESSIONAL INQUIRIES</p>
+                            <a
+                              href="mailto:contact@taghunter.fr"
+                              className="inline-flex items-center justify-center gap-3 text-black hover:text-gray-600 transition-colors duration-200 text-base md:text-lg group"
+                            >
+                              <Mail className="w-5 h-5" />
+                              <span className="font-mono border-b-2 border-black group-hover:border-gray-600 pb-1">
+                                contact@taghunter.fr
+                              </span>
+                            </a>
+                          </div>
                         </div>
                       </div>
                     </div>
